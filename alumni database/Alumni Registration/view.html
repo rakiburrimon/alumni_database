@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+     border: 1px solid black;
+     border-collapse:collapse;
+     text-align: center;
+     margin: auto;
+     width: 860px;
+}
+</style>
+</head>
+<body>
+<header>
+
+</header>
+
+
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "alumni";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+     die("Connection failed: " . $conn->connect_error);
+} 
+
+$sql = "SELECT * FROM alumni";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+     echo "<table>
+            <tr>
+                <th>firstname</th>
+                <th>lastname</th>                
+                <th>email</th>                
+                <th>ID</th>                
+                <th>lastqualification</th>                
+                <th>semester</th>                
+                <th>batchyear</th>                
+                <th>passingyear</th>                
+                <th>organization</th>
+                <th>occupation</th>
+                <th>designation</th>
+                <th>phone</th>
+                <th>presentaddress</th>
+                <th>parmanentaddress</th>
+                <th></th>
+            </tr>
+     // output data of each row
+     while($row = $result->fetch_assoc()) {
+         echo "<tr><td>"  . $row["firstName"]."</td><td>". $row["lastname"]. "</td><td>" . $row["email"]. " </td><td>" . $row["Id"]. "</td><td>" . $row["lastqualification"]. "</td><td>". $row["semester"]. "</td><td>". $row["batchyear"]. "</td><td>". $row["passingyear"]. "</td><td>". $row["organization"]. "</td><td>". $row["occupation"]. "</td><td>". $row["designation"]. "</td><td>". $row["phone"]. "</td><td>". $row["phone"]. "</td><td>". $row["parmanentaddress"]. "</td>";
+     }
+     echo "</table>";
+} else {
+     echo "0 results";
+}
+
+$conn->close();
+?>  <br><br><br><br><br><br><br>
+<div style="text-align: center;">
+    <button type="button" onclick="location.href='http://localhost/rg/main.php'">Back</button>
+</div>
+
+ <footer>
+
+
+ </footer>
+
+
+</body>
+</html>

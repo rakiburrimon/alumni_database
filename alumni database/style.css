@@ -1,0 +1,238 @@
+body {
+  background-color: powderblue;
+  font-family: "Open Sans", sans-serif;
+  padding: 15px 20px 20px 20px;
+  font-size: 15px;
+  margin: 0;
+  color: black;
+
+}
+
+h1 {
+  font-family: "Merriweather", serif;
+  font-size: 39px;
+  position: relative;
+  left: 330px;
+  top: 10px;
+}
+table, th, td{
+  border-collapse: collapse;
+  border: 1px solid green;
+  width: 100px;
+  
+}
+
+th, td {
+  text-align: center;
+  padding: 10px;
+}
+
+tr:nth-child(even){background-color: azure}
+th {
+    font-size: 25px;
+    background-color: #4CAF50;
+    color: white;
+}
+td {
+  background-color: white;
+  color: black;
+}
+tr:hover{
+  background-color: aqua;
+}
+p {
+  font-family: "Arial", Times, serif;
+}
+input{
+  width: 100%;
+  
+}
+input[type=text]
+{
+  
+  width: 100%
+  border: 1px solid #555;
+  background-color: white;
+  
+}
+input[type=text]:focus 
+{
+  width: 100%
+  border: 1px solid #555;
+  background-color: lightblue;
+  
+}
+input,select{
+  
+  width: 100%;
+  
+  
+}
+input[type=submit]
+{
+
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+li:last-child {
+    border-right: none;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover 
+{
+  background-color: lightgreen;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+input[type=submit]
+ {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: white;
+    color: black;
+}
+.center {
+    margin: auto;
+    width: 30%;
+    border: 3px;
+    padding: 10px;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;}
+input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;}
+input[type=text2], select {
+    width: 100%;
+    padding: 52px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=password], select {
+  display: inline;
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;}
+
+input[type=file], select {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=number], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+.container {
+    position: relative;
+}
+
+img {
+    position: absolute;
+    left: 350px;
+    top: 0px;
+    z-index: -1;
+    opacity: 0.3;
+}
+footer{
+  position: absolute;
+    left: 10px;
+    top: 550px;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirst {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
